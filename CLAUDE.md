@@ -60,8 +60,8 @@ Each stage produces both a build artifact AND a visual artifact. The diagrams ca
 |-------|-------|---------|--------|
 | Stage 0 | Project setup, repo, CLAUDE.md | **Architecture Overview** — 4-tier system map (Intake → Portfolio → Execution → Dashboard) | ✅ Done |
 | Stage 1 | Boards created in monday.com workspace | **Board Structure Map** — what was created, column/group layout, connection points | ✅ Done |
-| Stage 2 | Intake form | **Intake Flow** — form fields → submission → what happens next | ⬜ Next |
-| Stage 3 | Columns + automations (Portfolio + Execution) | **Automation Flow Diagram** — triggers, conditions, actions across both boards | ⬜ |
+| Stage 2 | Intake form | **Intake Flow** — form fields → submission → what happens next | ✅ Done |
+| Stage 3 | Columns + automations (Portfolio + Execution) | **Automation Flow Diagram** — triggers, conditions, actions across both boards | ⬜ Next |
 | Stage 4 | Dashboard | **Dashboard Widget Map** — 4 widgets, data sources, what each proves | ⬜ |
 | Stage 5 | AI column + completeness formula | **AI/Formula Separation Pattern** — fuzzy vs. deterministic, why both layers matter | ⬜ |
 | Stage 6 | Connect Boards + mirror back-link | **Connected Architecture** — data flow across tiers, what rolls up vs. what stays local | ⬜ |
@@ -101,7 +101,8 @@ Each stage produces both a build artifact AND a visual artifact. The diagrams ca
 - Three boards exist: Portfolio Board, Execution Board, Intake Board
 - Execution Board: groups renamed to Sprint 1/Sprint 2, sample items cleared, Status labels set to To Do / In Progress / Blocked / Done
 - Stage 1 verified complete
-- **Next: Stage 2 — create the intake form + Intake Flow diagram**
+- Form live at `forms.monday.com/forms/479b794a383233e17a99854cbeb536cd` — 8 fields, matches LEAN spec
+- **Next: Stage 3 — columns + automations on Portfolio and Execution boards**
 
 ## Self-Check Loop
 
