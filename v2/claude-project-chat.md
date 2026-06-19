@@ -720,3 +720,29 @@ Same approach for Stage 2: go create the form, screenshot whatever the form-crea
 **Verified against LEAN spec:** ✅ All 8 fields match. AI source column tagged. Completeness Formula + Connect Boards routing shown as Stage 5/6 dotted lines.
 
 **Next: Stage 3 — Columns + Automations on Portfolio and Execution boards**
+
+---
+
+## Stage 2 Complete — Intake Form
+
+**Done:** 8-field intake form live at `forms.monday.com/forms/479b794a383233e17a99854cbeb536cd`
+
+Built by adding columns to Intake Board first (monday.com forms pull from board columns), then toggling visibility:
+
+**Form fields (8):**
+1. Project name — Short Text (renamed from default "Name"), required
+2. Requestor name — Short Text, required
+3. Requestor email — Email, required
+4. Department — Dropdown: IT / Operations / HR, required
+5. Business problem — Long Text, required ← AI source column (Stage 5)
+6. Estimated budget range — Dropdown: Under $50K / $50K–200K / $200K+ / Unknown, required
+7. Desired timeline — Date, required
+8. Success criteria — Long Text, optional
+
+**Hidden from form:** Status, Date (default monday.com columns — internal tracking only)
+
+**Diagram:** `v2/diagrams/stage-2-intake-flow.html`
+
+**Verified against LEAN spec:** ✅ 8 fields exactly match. AI source column tagged. Form is live.
+
+**Lesson:** monday.com forms auto-generate from board columns. Build columns first, then form.
