@@ -697,3 +697,26 @@ Edited a file, ran a command
 Stage 1 is now accurate to what you actually built, including a real talking point I hadn't planned ("the execution board already looks structurally different — that's deliberate") that came directly out of your screenshot, not out of the original spec. That's a good sign for how this process is working — the narrative is getting sharper because it's grounded in your actual clicks, not my assumptions.
 
 Same approach for Stage 2: go create the form, screenshot whatever the form-creation flow shows you (especially the backing-board question), and I'll write Stage 2 against what's actually there rather than guessing.
+---
+
+## Stage 2 Complete — Intake Form
+
+**Built:** 8-field intake form at `forms.monday.com/forms/479b794a383233e17a99854cbeb536cd`
+
+**Fields:**
+| # | Field | Type | Required |
+|---|-------|------|----------|
+| 1 | Project name | Short Text | Yes |
+| 2 | Requestor name | Short Text | Yes |
+| 3 | Requestor email | Email | Yes |
+| 4 | Department | Dropdown (IT / Operations / HR) | Yes |
+| 5 | Business problem | Long Text | Yes — AI source column |
+| 6 | Estimated budget range | Dropdown ($50K / $50–200K / $200K+ / Unknown) | Yes |
+| 7 | Desired timeline | Date | Yes |
+| 8 | Success criteria | Long Text | No |
+
+**Diagram:** `v2/diagrams/stage-2-intake-flow.html` — form layout + submission flow + future routing logic
+
+**Verified against LEAN spec:** ✅ All 8 fields match. AI source column tagged. Completeness Formula + Connect Boards routing shown as Stage 5/6 dotted lines.
+
+**Next: Stage 3 — Columns + Automations on Portfolio and Execution boards**
