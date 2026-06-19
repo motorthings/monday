@@ -62,8 +62,8 @@ Each stage produces both a build artifact AND a visual artifact. The diagrams ca
 | Stage 1 | Boards created in monday.com workspace | **Board Structure Map** — what was created, column/group layout, connection points | ✅ Done |
 | Stage 2 | Intake form | **Intake Flow** — form fields → submission → what happens next | ✅ Done |
 | Stage 3 | Columns + automations (Portfolio + Execution) | **Automation Flow Diagram** — triggers, conditions, actions across both boards | ✅ Done |
-| Stage 4 | Dashboard | **Dashboard Widget Map** — 4 widgets, data sources, what each proves | ⬜ Next |
-| Stage 5 | AI column + completeness formula | **AI/Formula Separation Pattern** — fuzzy vs. deterministic, why both layers matter | ⬜ |
+| Stage 4 | Dashboard | **Dashboard Widget Map** — 4 widgets, data sources, what each proves | ✅ Done |
+| Stage 5 | AI column + completeness formula | **AI/Formula Separation Pattern** — fuzzy vs. deterministic, why both layers matter | ⬜ Next |
 | Stage 6 | Connect Boards + mirror back-link | **Connected Architecture** — data flow across tiers, what rolls up vs. what stays local | ⬜ |
 | Stage 7 | Mock data population (Stark Industries) | **Demo Scenario Map** — the narrative arc the mock data tells | ⬜ |
 | Stage 8 | Demo dry-run + Q&A prep | **Demo Flow Map** — 30-min presentation structure, key talking points per tier | ⬜ |
@@ -103,7 +103,7 @@ Each stage produces both a build artifact AND a visual artifact. The diagrams ca
 - Stage 1 verified complete
 - Form live at `forms.monday.com/forms/479b794a383233e17a99854cbeb536cd` — 8 fields, matches LEAN spec
 - Automation 3 (deadline breach → notify Assigned PM) live. Automations 1/2/4 deferred to Stage 5/6
-- **Next: Stage 4 — Executive Dashboard (4 widgets)**
+- **Next: Stage 5 — AI column + completeness formula**
 
 ## Self-Check Loop
 

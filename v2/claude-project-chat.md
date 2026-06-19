@@ -768,3 +768,22 @@ Built by adding columns to Intake Board first (monday.com forms pull from board 
 **Automations 1, 2, 4 deferred** — depend on Completeness Score formula (Stage 5) and Connect Boards (Stage 6).
 
 **Diagram:** `v2/diagrams/stage-3-automation-flow.html` — all 4 automations, live vs. deferred, both board column maps
+
+---
+
+## Stage 4 Complete — Executive Dashboard
+
+**4 widgets built:**
+
+| # | Widget | Type | Source |
+|---|--------|------|--------|
+| 1 | Portfolio Health | Chart (Pie) | Portfolio Board · Status column |
+| 2 | SLA Compliance | Number | Portfolio Board · Count of Approved + Rejected |
+| 3 | Active Projects Table | Table | Portfolio Board · Name, PM, Status, Timeline (filter: Approved) |
+| 4 | Department Load | Chart (Bar) | Intake Board · Department column |
+
+**SLA Compliance limitation:** Currently counts completed decisions (Approved + Rejected). True on-time % requires the Completeness Score formula (Stage 5). This is a documented demo talking point — "the architecture is ready, the formula is next."
+
+**Diagram:** `v2/diagrams/stage-4-dashboard.html` — 4 widget cards + data flow from boards → dashboard
+
+**Pepper impact:** Every widget feeds directly from live board data. Zero manual updates. No spreadsheets.
