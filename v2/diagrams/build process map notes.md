@@ -1,0 +1,7 @@
+That's the spine for everything we build next — nine sequential stages, color-coded so you can see at a glance which ones your OS can provision via API (teal) versus the one stage that has to be clicked together natively (coral, Stage 5: automations), with the API path called out as the optional extra-credit branch rather than baked into the main flow.
+
+A few notes on why it's shaped this way:
+
+- **Stages 1–4 and 6–8 are teal** because they're all confirmed API-provisionable from the docs I checked — workspace, boards, columns, formulas, the AI Categorize column, Connect Boards links, dashboard widgets, and bulk mock data via CSV ingest.
+- **Stage 5 stands alone in coral** because it's the one structural fact that matters most for your prep: automations are the one piece of this entire build that has no API path in the documented Platform MCP tool catalog. That's exactly the part you need to be fluent enough to build live if challenged in Q&A — so it's also the natural center of gravity for the manual walkthrough we do next.
+- **Stage 9** is the live demo sequence itself — submit a vague request, watch it route, walk the approval flow — separated out because that's choreography, not construction.

@@ -1,0 +1,24 @@
+{
+  "platform": "monday",
+  "source_base": "https://developer.monday.com",
+  "pages": [
+    {"url": "/api-reference/docs/basics", "output": "platform-reference.md", "title": "Platform Basics"},
+    {"url": "/api-reference/docs/rate-limits", "output": "rate-limits.md", "title": "Rate Limits"},
+    {"url": "/api-reference/docs/authentication", "output": "authentication.md", "title": "Authentication"},
+    {"url": "/api-reference/docs/api-versioning", "output": "api-versioning.md", "title": "API Versioning"},
+    {"url": "/api-reference/reference/column-types-reference", "output": "column-types.md", "title": "Column Types Reference"},
+    {"url": "/api-reference/docs/change-column-values", "output": "column-values.md", "title": "Change Column Values"},
+    {"url": "/api-reference/docs/create-board", "output": "create-board.md", "title": "Create Board"},
+    {"url": "/api-reference/docs/create-agent", "output": "agent-config.md", "title": "Create Agent"},
+    {"url": "/api-reference/docs/platform-mcp-tools", "output": "mcp-tools.md", "title": "Platform MCP Tools"},
+    {"url": "/api-reference/docs/build-on-monday-with-ai", "output": "build-with-ai.md", "title": "Build on Monday with AI"},
+    {"url": "/apps/docs/monday-workflows", "output": "workflows.md", "title": "Monday Workflows"},
+    {"url": "/apps/docs/workflows-triggers", "output": "automation-triggers.md", "title": "Workflow Triggers"},
+    {"url": "/apps/docs/workflows-actions", "output": "automation-actions.md", "title": "Workflow Actions"},
+    {"url": "/api-reference/docs/importing-items-in-bulk", "output": "bulk-import.md", "title": "Importing Items in Bulk"},
+    {"url": "/apps/docs/sidekick-tool", "output": "sidekick-tools.md", "title": "Sidekick Tools"},
+    {"url": "/api-reference/docs/querying-board-items", "output": "querying-items.md", "title": "Querying Board Items"},
+    {"url": "/api-reference/docs/error-handling", "output": "error-handling.md", "title": "Error Handling"},
+    {"url": "/apps/docs/integrations", "output": "integrations.md", "title": "Integrations Overview"}
+  ]
+}

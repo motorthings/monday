@@ -1,0 +1,84 @@
+{
+  "platform": "monday",
+  "source_base": "https://developer.monday.com",
+  "last_fetched": "2026-06-06T22:37:48.489117+00:00",
+  "pages_in_manifest": 18,
+  "pages_fetched": 18,
+  "pages_changed": 0,
+  "pages_unchanged": 0,
+  "pages_failed": 0,
+  "page_details": {
+    "platform-reference.md": {
+      "status": "new",
+      "sha256": "d4d6aef189107571c5c8fa58b28936173e8b313692987d06f8d796275e713600"
+    },
+    "rate-limits.md": {
+      "status": "new",
+      "sha256": "30beedaa504d791dc2612ea408822ce78b73bbf0addbd8a15d10cbc48446679e"
+    },
+    "authentication.md": {
+      "status": "new",
+      "sha256": "26da0490769d3b320568a7d708446589dcf0df12b74b1a9affb5808eca2d4b31"
+    },
+    "api-versioning.md": {
+      "status": "new",
+      "sha256": "7146b434f6382da31db52dd7eed018261d864dd6dd616477e3d395207e55917a"
+    },
+    "column-types.md": {
+      "status": "new",
+      "sha256": "db8822ac499e74a79dd5095223e06525c3ce5c5325f7aca51a75903104c552a1"
+    },
+    "column-values.md": {
+      "status": "new",
+      "sha256": "a408fe4f6374d126658ae2f6dedd85f774f17329ea92a748c1940054ed11e670"
+    },
+    "create-board.md": {
+      "status": "new",
+      "sha256": "682079a085c7ed6326531edaf0688f0a710153ffdbcb74a5a6cfeb4afcda83c0"
+    },
+    "agent-config.md": {
+      "status": "new",
+      "sha256": "c17e111fe6484c58a087f7fbd704389fb72d7649a05cc591039b256f2e8233e0"
+    },
+    "mcp-tools.md": {
+      "status": "new",
+      "sha256": "6b8e1edc5ff258e0e33326476fe3b5df9836c117478c0c170645b78b99852fbd"
+    },
+    "build-with-ai.md": {
+      "status": "new",
+      "sha256": "70aef1fc98d731267d3927aa1c65af1159a08252ade64145d0c3b244f1f59336"
+    },
+    "workflows.md": {
+      "status": "new",
+      "sha256": "d659203fc2b78adeb290154fa178d972f2395da1b26bda7665161a0983aeb7b2"
+    },
+    "automation-triggers.md": {
+      "status": "new",
+      "sha256": "3d3c60eb6e1c5c72f4ca533e3eff1d776706ffb5a98708cd22fc1d27462e2963"
+    },
+    "automation-actions.md": {
+      "status": "new",
+      "sha256": "a3c2891fb8de6aad8785e96ca3133183459125495f5db15958c051872c532764"
+    },
+    "bulk-import.md": {
+      "status": "new",
+      "sha256": "b509a882b5e9911948ab9b0ef7d463e11a3f4846b5bc6dfabcb0953f99d6861a"
+    },
+    "sidekick-tools.md": {
+      "status": "new",
+      "sha256": "ca95f0a19a956e07d74b90c326c0a4940eca50d04fa3abcf74f620aa97634b06"
+    },
+    "querying-items.md": {
+      "status": "new",
+      "sha256": "18a156a09a5bb6d3bfc43771a46a94e331466830b491896dc76549cf4235c0fe"
+    },
+    "error-handling.md": {
+      "status": "new",
+      "sha256": "80aefe096c9195067e797c48bc8fea6bf18782b6ee37e4f38586105a226ef8d1"
+    },
+    "integrations.md": {
+      "status": "new",
+      "sha256": "a9f3e38b5e4e89aea9cd9dc710b5232fcc75197f9ef4529d0edd39c4519476a3"
+    }
+  }
+}
