@@ -29,7 +29,7 @@ monday/
 └── v2/                                 ← Build execution and conversation history
     ├── claude-project-chat.md          ← THE CANONICAL CONVERSATION — full Claude Code chat history for this project (699 lines, ongoing)
     ├── Stark-Industries-PMO-LEAN-INPUT.md  ← The LEAN MVP spec — deliberately stripped to only what the assignment requires
-    └── diagrams/                       ← Build diagrams and process maps
+    └── diagrams/                       ← visual-explainer HTML output + monday.com UI screenshots
 ```
 
 ## The Architecture (LEAN MVP — what we're actually building)
@@ -52,18 +52,22 @@ monday/
 3. **"Structured differently"** — Execution Board uses group-based sprint structure (Sprint 1/Sprint 2) vs. Portfolio's Status-based pipeline. This deliberate contrast satisfies the assignment requirement directly.
 4. **One SLA breach automation, not a multi-stage ladder** — fires at the deadline. Explain the 2-day warning, escalation, and At Risk → Escalation → Breach ladder verbally.
 
-## Build Stages
+## Build Stages & Diagrams
 
-| Stage | What | Status |
-|-------|------|--------|
-| Stage 1 | Boards created in monday.com workspace | ✅ Done |
-| Stage 2 | Intake form | ⬜ Next |
-| Stage 3 | Columns + automations (Portfolio + Execution) | ⬜ |
-| Stage 4 | Dashboard | ⬜ |
-| Stage 5 | AI column + completeness formula | ⬜ |
-| Stage 6 | Connect Boards + mirror back-link | ⬜ |
-| Stage 7 | Mock data population (Stark Industries) | ⬜ |
-| Stage 8 | Demo dry-run + Q&A prep | ⬜ |
+Each stage produces both a build artifact AND a visual artifact. The diagrams capture process, not just product — they're demo material for the interview, showing how you think through architecture.
+
+| Stage | Build | Diagram | Status |
+|-------|-------|---------|--------|
+| Stage 0 | Project setup, repo, CLAUDE.md | **Architecture Overview** — 4-tier system map (Intake → Portfolio → Execution → Dashboard) | ✅ Done |
+| Stage 1 | Boards created in monday.com workspace | **Board Structure Map** — what was created, column/group layout, connection points | ✅ Done |
+| Stage 2 | Intake form | **Intake Flow** — form fields → submission → what happens next | ⬜ Next |
+| Stage 3 | Columns + automations (Portfolio + Execution) | **Automation Flow Diagram** — triggers, conditions, actions across both boards | ⬜ |
+| Stage 4 | Dashboard | **Dashboard Widget Map** — 4 widgets, data sources, what each proves | ⬜ |
+| Stage 5 | AI column + completeness formula | **AI/Formula Separation Pattern** — fuzzy vs. deterministic, why both layers matter | ⬜ |
+| Stage 6 | Connect Boards + mirror back-link | **Connected Architecture** — data flow across tiers, what rolls up vs. what stays local | ⬜ |
+| Stage 7 | Mock data population (Stark Industries) | **Demo Scenario Map** — the narrative arc the mock data tells | ⬜ |
+| Stage 8 | Demo dry-run + Q&A prep | **Demo Flow Map** — 30-min presentation structure, key talking points per tier | ⬜ |
+| Stage 9 | Final polish | **Process Retrospective** — before/after: overbuilt PRD vs LEAN MVP, what we chose and why | ⬜ |
 
 ## Working in This Repo
 
@@ -75,18 +79,35 @@ monday/
 
 **The assignment notes (`assignment - notes.md`) are the presentation strategy.** Structure for the 30-minute demo, Q&A prep, what AI did vs. what human judgment did.
 
+### Diagrams
+
+**Use the `/visual-explainer` skill for all diagrams.** Output lands in `v2/diagrams/`. Each diagram is a self-contained HTML file — open in browser, screenshot for the interview deck.
+
+**Why this matters for the interview:**
+
+- Shows you used AI as a working tool to think through architecture, not just build
+- Each diagram is a slide-ready artifact for the "AI walkthrough" portion of the demo
+- The before/after comparison (overbuilt PRD → LEAN MVP) directly demonstrates "consultative thinking" — you identified scope creep and made deliberate cuts
+- Process diagrams prove you didn't just build — you architected
+
+**Diagram conventions:**
+- File naming: `stage-N-description.html` (e.g., `stage-2-intake-flow.html`)
+- Each diagram includes a caption explaining what it captures and why the decision mattered
+- Screenshots of the actual monday.com build go alongside diagrams in `v2/diagrams/`
+
 ## Current State (as of last session)
 
 - Workspace "Stark Industries PMO" created in monday.com trial account
 - Three boards exist: Portfolio Board, Execution Board, Intake Board
 - Execution Board: groups renamed to Sprint 1/Sprint 2, sample items cleared, Status labels set to To Do / In Progress / Blocked / Done
 - Stage 1 verified complete
-- **Next: Stage 2 — create the intake form**
+- **Next: Stage 2 — create the intake form + Intake Flow diagram**
 
 ## Self-Check Loop
 
 After each build stage:
-1. Screenshot the build in monday.com UI
-2. Verify against the LEAN spec
-3. Append findings to `v2/claude-project-chat.md`
-4. Mark stage complete, confirm next stage
+1. Build the thing in monday.com UI → screenshot
+2. Generate the diagram via `/visual-explainer` → save to `v2/diagrams/`
+3. Verify against the LEAN spec
+4. Append findings + screenshot + diagram reference to `v2/claude-project-chat.md`
+5. Mark stage complete, confirm next stage
