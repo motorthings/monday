@@ -805,3 +805,26 @@ Built by adding columns to Intake Board first (monday.com forms pull from board 
 **Diagram:** `v2/diagrams/stage-5-ai-formula-pattern.html` — two-layer separation pattern, AI vs formula roles
 
 **Demo narrative locked:** "AI handles the fuzzy (understanding vague requests), formula handles the deterministic (are fields filled?). Using the right tool for each layer is the architectural instinct they're testing for."
+
+---
+
+## Stage 6 Complete — Connected Architecture
+
+**Connect Boards columns added:**
+- Portfolio Board → Execution Board (via "Connected Execution Board")
+- Intake Board → Portfolio Board (via "Connected Portfolio Item")
+- Execution Board mirror: Portfolio Board link-back + Status + Due Date roll-up
+
+**Automation 4 wired:**
+- Trigger: Portfolio Status → Approved
+- Action: "Create item in board & connect boards" on Execution Board
+- Source column: Connected Execution Board (Portfolio)
+- Target column: Connected portfolio item (Execution)
+- Name: "{Project name} — Execution" in Sprint 1 group
+- Notify: Assigned PM
+
+**Architecture complete.** Full flow: Intake form → AI summary → formula check → routing → Portfolio review → approval → auto-create Execution → mirror Status/Due Date back → Dashboard shows it all.
+
+**Diagram:** `v2/diagrams/stage-6-connected-architecture.html`
+
+**Next: Stage 7 — Mock data population (Stark Industries scenarios)**
