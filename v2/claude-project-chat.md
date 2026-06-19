@@ -746,3 +746,25 @@ Built by adding columns to Intake Board first (monday.com forms pull from board 
 **Verified against LEAN spec:** ✅ 8 fields exactly match. AI source column tagged. Form is live.
 
 **Lesson:** monday.com forms auto-generate from board columns. Build columns first, then form.
+
+---
+
+## Stage 3 Complete — Columns + Automations
+
+**Portfolio Board columns added (8 of 11):**
+- Project name, Requestor / Department, Business problem, Status (4 labels), Assigned PM, Evaluation Deadline, SLA Progress, Timeline
+- Deferred: AI Summary, Completeness Score (Stage 5), Connected Execution Board (Stage 6)
+
+**Execution Board columns added (5 of 6):**
+- Task name, Assigned to, Status (4 labels), Due date, Sprint (dropdown)
+- Deferred: Connected portfolio item (Stage 6)
+
+**Automation 3 built:**
+- Trigger: Evaluation Deadline arrives
+- Condition: Status ≠ Approved AND Status ≠ Rejected
+- Action: Notify Assigned PM
+- Verbal footnote: "In production, Pepper would be a named user on the account — add her here and the notification hits her inbox."
+
+**Automations 1, 2, 4 deferred** — depend on Completeness Score formula (Stage 5) and Connect Boards (Stage 6).
+
+**Diagram:** `v2/diagrams/stage-3-automation-flow.html` — all 4 automations, live vs. deferred, both board column maps
