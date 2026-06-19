@@ -787,3 +787,21 @@ Built by adding columns to Intake Board first (monday.com forms pull from board 
 **Diagram:** `v2/diagrams/stage-4-dashboard.html` — 4 widget cards + data flow from boards → dashboard
 
 **Pepper impact:** Every widget feeds directly from live board data. Zero manual updates. No spreadsheets.
+
+---
+
+## Stage 5 Complete — AI Column + Completeness Formula
+
+**AI Summary column built** — AI Column type, Summarize task, reads Business Problem, outputs structured summary on Intake Board.
+
+**Completeness Score formula built** — IF/AND formula checking 7 required fields, returns "Complete" or "Incomplete."
+
+**Platform limitation discovered:** Formula columns can't trigger "When column changes" automations in monday.com. Workaround: "When item created" trigger + condition check on formula value. This is a real platform insight — documented as a demo talking point.
+
+**Automations wired:**
+- Auto 1: When item created + Score = "Complete" → Status = Pending Review, notify Assigned PM (date set deferred — relative date picker not available in trial)
+- Auto 2: When item created + Score = "Incomplete" → Status = Incomplete, notify requestor
+
+**Diagram:** `v2/diagrams/stage-5-ai-formula-pattern.html` — two-layer separation pattern, AI vs formula roles
+
+**Demo narrative locked:** "AI handles the fuzzy (understanding vague requests), formula handles the deterministic (are fields filled?). Using the right tool for each layer is the architectural instinct they're testing for."
