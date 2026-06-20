@@ -828,3 +828,40 @@ Built by adding columns to Intake Board first (monday.com forms pull from board 
 **Diagram:** `v2/diagrams/stage-6-connected-architecture.html`
 
 **Next: Stage 7 — Mock data population (Stark Industries scenarios)**
+
+---
+
+## Stage 7 — Mock Data Population (2026-06-19)
+
+### What we did
+- Wrote `v2/inject_mock_data.py` — Python script that injects 6 Stark Industries project requests into the Intake Board via monday.com GraphQL API
+- Board: Stark Industries - Project Intake (18418546502)
+- 18 columns discovered, 8 set per item (text, email, dropdown, date, status)
+- Column mapping: Requestor Name, Requestor Email, Department Name, Business Problem, Estimated Budget Range, Desired Timeline, Success Criteria, Evaluation Deadline, Status
+
+### 6 Mock Scenarios
+
+| # | Project | Dept | Budget | Timeline | Status | Demo Purpose |
+|---|---------|------|--------|----------|--------|-------------|
+| 1 | Arc Reactor Cooling System Upgrade | IT | $200k+ | +30 days | Pending Review | Clean path — all fields complete |
+| 2 | Warehouse Optimization Project | Ops | Unknown | +45 days | Pending Review | AI test — vague business problem |
+| 3 | Annual Safety Certification Rollout | HR | $50k-200k | +14 days | Pending Review | Department variety |
+| 4 | JARVIS Natural Language Interface v2 | IT | (empty) | (empty) | Pending Review | Missing budget/timeline/success criteria |
+| 5 | Supply Chain Disruption — Palladium | Ops | $200k+ | +2 days | Pending Review | **SLA breach test** — Eval Deadline = tomorrow |
+| 6 | Office Ping Pong Tournament | HR | Under $50k | +60 days | Pending Review | Low-value — natural rejection candidate |
+
+### Key observations
+- **AI Summary column auto-fires via API** — each item has a concise AI summary of the Business Problem
+- **Completeness formula + Automation 1 fire on creation** — all 6 show "Pending Review" because the formula only checks 5 core identity fields (Project Name, Requestor Name, Requestor Email, Department, Business Problem), not budget/timeline/success criteria
+- JARVIS (scenario 4) is "complete" per the formula despite missing budget/timeline — the formula was designed to catch truly incomplete submissions (missing who/what/where), not planning gaps
+- Supply Chain (scenario 5) has Evaluation Deadline = 2026-06-20 for live SLA breach demo
+- 3 stale test items remain from earlier manual testing
+
+### Injection script
+`v2/inject_mock_data.py` — reusable, run with `python3 v2/inject_mock_data.py`
+
+### Board IDs
+- Intake: 18418546502
+- Portfolio: 18418546540
+- Execution: 18418546641
+

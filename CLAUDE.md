@@ -58,14 +58,14 @@ Each stage produces both a build artifact AND a visual artifact. The diagrams ca
 
 | Stage | Build | Diagram | Status |
 |-------|-------|---------|--------|
-| Stage 0 | Project setup, repo, CLAUDE.md | **Architecture Overview** — 4-tier system map (Intake → Portfolio → Execution → Dashboard) | ✅ Done |
+| Stage 0 | Project setup, repo, CLAUDE.md | **Consultative Discovery** — Pepper's request → gap analysis → 4-tier architecture + deliberate scope cuts | ✅ Done |
 | Stage 1 | Boards created in monday.com workspace | **Board Structure Map** — what was created, column/group layout, connection points | ✅ Done |
 | Stage 2 | Intake form | **Intake Flow** — form fields → submission → what happens next | ✅ Done |
 | Stage 3 | Columns + automations (Portfolio + Execution) | **Automation Flow Diagram** — triggers, conditions, actions across both boards | ✅ Done |
 | Stage 4 | Dashboard | **Dashboard Widget Map** — 4 widgets, data sources, what each proves | ✅ Done |
 | Stage 5 | AI column + completeness formula | **AI/Formula Separation Pattern** — fuzzy vs. deterministic, why both layers matter | ✅ Done |
 | Stage 6 | Connect Boards + mirror back-link | **Connected Architecture** — data flow across tiers, what rolls up vs. what stays local | ✅ Done |
-| Stage 7 | Mock data population | **Demo Scenario Map** — the narrative arc the mock data tells | ⬜ Next |
+| Stage 7 | Mock data population | **Demo Scenario Map** — the narrative arc the mock data tells | ✅ Done |
 | Stage 8 | Demo dry-run + Q&A prep | **Demo Flow Map** — 30-min presentation structure, key talking points per tier | ⬜ |
 | Stage 9 | Final polish | **Process Retrospective** — before/after: overbuilt PRD vs LEAN MVP, what we chose and why | ⬜ |
 
@@ -95,15 +95,21 @@ Each stage produces both a build artifact AND a visual artifact. The diagrams ca
 - Each diagram includes a caption explaining what it captures and why the decision mattered
 - Screenshots of the actual monday.com build go alongside diagrams in `v2/diagrams/`
 
-## Current State (as of last session)
+## Current State (as of 2026-06-19)
 
 - Workspace "Stark Industries PMO" created in monday.com trial account
-- Three boards exist: Portfolio Board, Execution Board, Intake Board
-- Execution Board: groups renamed to Sprint 1/Sprint 2, sample items cleared, Status labels set to To Do / In Progress / Blocked / Done
-- Stage 1 verified complete
+- Three boards: Intake (18418546502), Portfolio (18418546540), Execution (18418546641)
+- Execution Board: groups renamed to Sprint 1/Sprint 2, Status labels: To Do / In Progress / Blocked / Done
 - Form live at `forms.monday.com/forms/479b794a383233e17a99854cbeb536cd` — 8 fields, matches LEAN spec
-- Automation 3 (deadline breach → notify Assigned PM) live. Automations 1/2/4 deferred to Stage 5/6
-- **Next: Stage 7 — mock data population (Stark Industries scenarios)**
+- All 4 automations live across Intake + Portfolio boards
+- Connect Boards: Intake → Portfolio, Portfolio → Execution with mirror roll-up (Status + Due Date)
+- Dashboard: 4 widgets (Portfolio Health, SLA Compliance, Active Projects, Department Load)
+- **Stage 7 complete:** 6 Stark Industries mock requests injected via API into Intake Board
+  - AI Summary column auto-fires on all 6 items
+  - Completeness formula + automations process items on creation
+  - Supply Chain scenario has Evaluation Deadline = 2026-06-20 (tomorrow) for SLA breach demo
+  - Injection script at `v2/inject_mock_data.py`
+- **Next: Stage 8 — demo dry-run + Q&A prep**
 
 ## Self-Check Loop
 
